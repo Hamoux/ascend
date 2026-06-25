@@ -1,0 +1,31 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+.identityRow {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-3);
+}
+.grow {
+  flex: 1;
+  min-width: 0;
+}
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-3);
+}
+.gain {
+  color: var(--success);
+}
+.loss {
+  color: var(--danger);
+}
+
+@media (max-width: 480px) {
+  .row2 {
+    grid-template-columns: 1fr;
+  }
+}

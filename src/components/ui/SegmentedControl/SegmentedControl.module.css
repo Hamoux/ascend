@@ -1,0 +1,63 @@
+.group {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 4px;
+  border-radius: var(--r-md);
+  background: var(--surface-1);
+  border: 1px solid var(--border-subtle);
+}
+.fluid {
+  display: flex;
+  width: 100%;
+}
+.fluid .segment {
+  flex: 1;
+}
+
+.segment {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-2);
+  padding: 0 var(--sp-3);
+  border-radius: var(--r-sm);
+  color: var(--text-tertiary);
+  font-weight: 600;
+  white-space: nowrap;
+  transition: color var(--dur) var(--ease-out);
+}
+.sm .segment {
+  height: 32px;
+  font-size: var(--fs-sm);
+}
+.md .segment {
+  height: 38px;
+  font-size: var(--fs-base);
+}
+.segment:hover {
+  color: var(--text-secondary);
+}
+.active {
+  color: var(--text-primary);
+}
+.segIcon {
+  display: inline-flex;
+  z-index: 1;
+}
+.segIcon :global(svg) {
+  width: 16px;
+  height: 16px;
+}
+.segLabel {
+  z-index: 1;
+}
+.indicator {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--r-sm);
+  background: var(--surface-3);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}

@@ -1,0 +1,190 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr 1fr;
+  gap: var(--sp-4);
+}
+.rateCard {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+}
+.ringPct {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: var(--fs-lg);
+  font-variant-numeric: tabular-nums;
+}
+.rateLabel {
+  font-weight: 700;
+  font-size: var(--fs-md);
+}
+.rateSub {
+  font-size: var(--fs-sm);
+  color: var(--text-tertiary);
+  margin-top: 2px;
+}
+
+.legend {
+  display: flex;
+  gap: var(--sp-4);
+  margin-top: var(--sp-3);
+  justify-content: center;
+}
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--fs-sm);
+  color: var(--text-tertiary);
+}
+.legendDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+}
+
+.duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-4);
+}
+.topCard {
+  position: relative;
+  overflow: hidden;
+}
+.topBadge {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--r-md);
+  margin-bottom: var(--sp-3);
+}
+.topBadge[data-tone='up'] {
+  background: var(--success-soft);
+  color: var(--success);
+}
+.topBadge[data-tone='down'] {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+.topBadge :global(svg) {
+  width: 22px;
+  height: 22px;
+}
+.topLabel {
+  font-size: var(--fs-sm);
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+}
+.topName {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  margin-top: 4px;
+}
+.topIcon {
+  font-size: 1.4rem;
+}
+.topCount {
+  font-size: var(--fs-sm);
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+.topEmpty {
+  font-size: var(--fs-base);
+  color: var(--text-quaternary);
+  margin-top: 4px;
+}
+
+.breakdown {
+  display: flex;
+  flex-direction: column;
+}
+.bRow {
+  display: grid;
+  grid-template-columns: 28px minmax(110px, 1.4fr) 2fr 46px 52px 56px;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-2) 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.bRow:last-child {
+  border-bottom: none;
+}
+.bIcon {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.bName {
+  font-weight: 600;
+  font-size: var(--fs-sm);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bRate {
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.bVolume {
+  font-size: var(--fs-xs);
+  color: var(--text-tertiary);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.bNet {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  text-align: right;
+  color: var(--success);
+  font-variant-numeric: tabular-nums;
+}
+.bNet[data-neg='true'] {
+  color: var(--danger);
+}
+
+@media (max-width: 1080px) {
+  .highlights {
+    grid-template-columns: 1fr 1fr;
+  }
+  .rateCard {
+    grid-column: span 2;
+  }
+}
+@media (max-width: 680px) {
+  .highlights {
+    grid-template-columns: 1fr;
+  }
+  .rateCard {
+    grid-column: span 1;
+  }
+  .duo {
+    grid-template-columns: 1fr;
+  }
+  .bRow {
+    grid-template-columns: 24px 1.4fr 44px 50px;
+  }
+  .bBar,
+  .bVolume {
+    display: none;
+  }
+}

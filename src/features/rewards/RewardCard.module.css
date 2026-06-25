@@ -1,0 +1,135 @@
+.card {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.ready {
+  border-color: rgba(52, 211, 153, 0.3);
+}
+
+.cover {
+  position: relative;
+  height: 132px;
+  display: grid;
+  place-items: center;
+  background-size: cover;
+  background-position: center;
+  background-color: color-mix(in srgb, var(--accent) 22%, var(--bg-elevated));
+  background-image: radial-gradient(120% 120% at 50% 0%, color-mix(in srgb, var(--accent) 40%, transparent), transparent 70%);
+}
+.coverEmoji {
+  font-size: 3.4rem;
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.4));
+  z-index: 1;
+}
+.coverOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(8, 8, 14, 0.55), transparent 55%);
+}
+.menu {
+  position: absolute;
+  top: var(--sp-2);
+  right: var(--sp-2);
+  display: flex;
+  gap: 4px;
+  opacity: 0;
+  transition: opacity var(--dur);
+  z-index: 2;
+}
+.card:hover .menu {
+  opacity: 1;
+}
+.costTag {
+  position: absolute;
+  bottom: var(--sp-2);
+  left: var(--sp-2);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  height: 30px;
+  padding: 0 var(--sp-3);
+  border-radius: var(--r-full);
+  background: rgba(8, 8, 14, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  font-variant-numeric: tabular-nums;
+  z-index: 2;
+}
+.coin {
+  width: 15px;
+  height: 15px;
+  color: var(--gold);
+}
+.readyTag {
+  position: absolute;
+  bottom: var(--sp-2);
+  right: var(--sp-2);
+  z-index: 2;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: var(--sp-2);
+  padding: var(--sp-4);
+}
+.titleRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--sp-2);
+}
+.name {
+  font-size: var(--fs-md);
+  font-weight: 700;
+  line-height: 1.25;
+}
+.desc {
+  font-size: var(--fs-sm);
+  color: var(--text-tertiary);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.footer {
+  margin-top: auto;
+  padding-top: var(--sp-3);
+}
+.locked {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+.lockedTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lockedLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+.lock {
+  width: 14px;
+  height: 14px;
+  color: var(--gold);
+}
+.lockedPct {
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  color: var(--gold);
+  font-variant-numeric: tabular-nums;
+}

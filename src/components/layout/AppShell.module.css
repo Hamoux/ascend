@@ -1,0 +1,33 @@
+.app {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.main {
+  margin-left: var(--sidebar-w);
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+.inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 0 var(--sp-7) var(--sp-9);
+}
+.page {
+  padding-bottom: var(--sp-8);
+}
+
+@media (max-width: 860px) {
+  .main {
+    margin-left: 0;
+  }
+  .inner {
+    padding: 0 var(--sp-4) calc(var(--sp-10) + var(--sp-6));
+  }
+}
+
+@media (max-width: 560px) {
+  .inner {
+    padding: 0 var(--sp-3) calc(var(--sp-10) + var(--sp-6));
+  }
+}

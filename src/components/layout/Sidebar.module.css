@@ -1,0 +1,162 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: var(--sidebar-w);
+  display: flex;
+  flex-direction: column;
+  padding: var(--sp-5) var(--sp-4);
+  gap: var(--sp-6);
+  border-right: 1px solid var(--border-subtle);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.018), transparent 40%);
+  backdrop-filter: blur(8px);
+  z-index: var(--z-nav);
+}
+
+@media (max-width: 860px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-2) var(--sp-2);
+}
+.logo {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  filter: drop-shadow(0 6px 16px rgba(124, 108, 255, 0.45));
+}
+.brandText {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+.wordmark {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: var(--fs-lg);
+  letter-spacing: -0.02em;
+}
+.tagline {
+  font-size: var(--fs-xs);
+  color: var(--text-quaternary);
+  font-weight: 500;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+.navItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  height: 46px;
+  padding: 0 var(--sp-3);
+  border-radius: var(--r-sm);
+  color: var(--text-tertiary);
+  font-weight: 600;
+  font-size: var(--fs-base);
+  transition: color var(--dur) var(--ease-out);
+}
+.navItem:hover {
+  color: var(--text-secondary);
+}
+.navItem.active {
+  color: var(--text-primary);
+}
+.navIndicator {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--r-sm);
+  background: var(--brand-soft);
+  border: 1px solid var(--border-brand);
+}
+.navIndicator::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 20px;
+  border-radius: var(--r-full);
+  background: var(--grad-brand);
+}
+.navIcon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.navLabel {
+  position: relative;
+}
+
+.levelCard {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-3);
+  text-align: left;
+  border-radius: var(--r-md);
+  background: var(--surface-1);
+  border: 1px solid var(--border-subtle);
+  transition: background var(--dur), border-color var(--dur);
+}
+.levelCard:hover {
+  background: var(--surface-2);
+  border-color: var(--border);
+}
+.avatar {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: var(--r-sm);
+  background: var(--grad-brand);
+  color: #fff;
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  box-shadow: var(--glow-brand);
+}
+.levelInfo {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.levelTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-2);
+}
+.levelName {
+  font-weight: 600;
+  font-size: var(--fs-sm);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.levelTag {
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  color: var(--brand);
+  flex-shrink: 0;
+}
+.levelSub {
+  font-size: var(--fs-xs);
+  color: var(--text-quaternary);
+}

@@ -1,0 +1,109 @@
+.card {
+  height: 100%;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-2);
+  border-radius: var(--r-sm);
+  transition: background var(--dur);
+}
+.row:hover {
+  background: var(--surface-1);
+}
+.emoji {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: var(--r-sm);
+  font-size: 1.3rem;
+}
+.info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.name {
+  font-weight: 600;
+  font-size: var(--fs-base);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.meta {
+  font-size: var(--fs-xs);
+  color: var(--text-quaternary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.pos {
+  color: var(--success);
+  font-weight: 600;
+}
+.controls {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+.ctrl {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text-tertiary);
+  transition: all var(--dur) var(--ease-out);
+}
+.ctrl:hover {
+  transform: translateY(-1px);
+}
+.ctrl :global(svg) {
+  width: 18px;
+  height: 18px;
+}
+.complete:hover {
+  color: var(--success);
+  border-color: rgba(52, 211, 153, 0.4);
+  background: var(--success-soft);
+}
+.skip:hover {
+  color: var(--danger);
+  border-color: rgba(251, 111, 132, 0.4);
+  background: var(--danger-soft);
+}
+.activeComplete {
+  color: #04201a;
+  background: var(--grad-success);
+  border-color: transparent;
+}
+.activeSkip {
+  color: #fff;
+  background: var(--grad-danger);
+  border-color: transparent;
+}
+.more {
+  margin-top: var(--sp-1);
+  padding: var(--sp-2);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--text-tertiary);
+  border-radius: var(--r-sm);
+  transition: background var(--dur), color var(--dur);
+}
+.more:hover {
+  background: var(--surface-1);
+  color: var(--text-secondary);
+}

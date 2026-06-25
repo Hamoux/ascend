@@ -1,0 +1,56 @@
+.track {
+  position: relative;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: var(--r-full);
+  overflow: hidden;
+}
+.fill {
+  position: relative;
+  height: 100%;
+  border-radius: var(--r-full);
+  transition: width var(--dur-slow) var(--ease-out);
+  overflow: hidden;
+}
+.brand {
+  background: var(--grad-brand);
+}
+.success {
+  background: var(--grad-success);
+}
+.danger {
+  background: var(--grad-danger);
+}
+.gold {
+  background: var(--grad-gold);
+}
+.cyan {
+  background: var(--grad-cyan);
+}
+.custom {
+  background: var(--bar-fill);
+}
+.sheen {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+  transform: translateX(-100%);
+  animation: shimmer 2.4s var(--ease-in-out) infinite;
+}
+
+/* ---------- Ring ---------- */
+.ring {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+}
+.ringValue {
+  transition: stroke-dashoffset var(--dur-slow) var(--ease-out);
+}
+.ringCenter {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}

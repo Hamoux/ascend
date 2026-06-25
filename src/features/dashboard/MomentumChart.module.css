@@ -1,0 +1,39 @@
+.card {
+  height: 100%;
+}
+.head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-4);
+}
+.title {
+  font-size: var(--fs-lg);
+  font-weight: 700;
+}
+.sub {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  margin-top: 2px;
+  font-size: var(--fs-sm);
+  color: var(--text-tertiary);
+}
+.delta {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.delta :global(svg) {
+  width: 14px;
+  height: 14px;
+}
+.up {
+  color: var(--success);
+}
+.down {
+  color: var(--danger);
+}

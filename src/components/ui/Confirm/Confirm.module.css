@@ -1,0 +1,5 @@
+.message {
+  color: var(--text-secondary);
+  font-size: var(--fs-base);
+  line-height: 1.55;
+}

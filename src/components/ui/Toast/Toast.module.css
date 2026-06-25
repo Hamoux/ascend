@@ -1,0 +1,141 @@
+.viewport {
+  position: fixed;
+  top: var(--sp-5);
+  right: var(--sp-5);
+  z-index: var(--z-toast);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  width: min(380px, calc(100vw - 32px));
+  pointer-events: none;
+}
+
+.toast {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-3) var(--sp-4);
+  overflow: hidden;
+  border-radius: var(--r-md);
+  background: var(--surface-solid-2);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-lg), var(--inset-hairline);
+  backdrop-filter: blur(var(--blur));
+  pointer-events: auto;
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: var(--r-xs);
+}
+.icon :global(svg) {
+  width: 19px;
+  height: 19px;
+}
+.content {
+  flex: 1;
+  min-width: 0;
+}
+.title {
+  font-weight: 600;
+  font-size: var(--fs-base);
+  line-height: 1.3;
+}
+.message {
+  font-size: var(--fs-sm);
+  color: var(--text-tertiary);
+  margin-top: 1px;
+}
+
+.points {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-base);
+  font-variant-numeric: tabular-nums;
+}
+.gain {
+  color: var(--success);
+}
+.loss {
+  color: var(--danger);
+}
+
+.dismiss {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  border-radius: var(--r-xs);
+  color: var(--text-quaternary);
+  transition: background var(--dur), color var(--dur);
+}
+.dismiss:hover {
+  background: var(--surface-2);
+  color: var(--text-secondary);
+}
+.dismiss :global(svg) {
+  width: 15px;
+  height: 15px;
+}
+
+.progress {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  transform-origin: left;
+  opacity: 0.55;
+}
+
+.success .icon {
+  background: var(--success-soft);
+  color: var(--success);
+}
+.success .progress {
+  background: var(--success);
+}
+.error .icon {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+.error .progress {
+  background: var(--danger);
+}
+.info .icon {
+  background: var(--info-soft);
+  color: var(--info);
+}
+.info .progress {
+  background: var(--info);
+}
+.warning .icon {
+  background: var(--warning-soft);
+  color: var(--warning);
+}
+.warning .progress {
+  background: var(--warning);
+}
+.points .icon {
+  background: var(--brand-soft);
+  color: var(--brand);
+}
+.points .progress {
+  background: var(--brand);
+}
+
+@media (max-width: 560px) {
+  .viewport {
+    top: auto;
+    bottom: calc(var(--sp-9) + var(--sp-5));
+    left: var(--sp-4);
+    right: var(--sp-4);
+    width: auto;
+  }
+}

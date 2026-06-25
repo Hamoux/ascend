@@ -1,0 +1,71 @@
+.chart {
+  position: relative;
+  width: 100%;
+}
+.chart svg {
+  display: block;
+  overflow: visible;
+}
+
+.axisLabel {
+  fill: var(--text-quaternary);
+  font-size: 10px;
+  font-weight: 600;
+  font-family: var(--font-sans);
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 6px 10px;
+  pointer-events: none;
+  white-space: nowrap;
+  border-radius: var(--r-xs);
+  background: var(--surface-solid-2);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+}
+.tipValue {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
+.tipLabel {
+  font-size: var(--fs-xs);
+  color: var(--text-tertiary);
+}
+.tipRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--fs-xs);
+  color: var(--text-secondary);
+  font-variant-numeric: tabular-nums;
+}
+.tipDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: var(--fs-xs);
+  color: var(--text-quaternary);
+}
+.legendCells {
+  display: flex;
+  gap: 3px;
+}
+.legendCell {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+}
