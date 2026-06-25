@@ -17,9 +17,9 @@ Turn discipline into rewards. **Ascend** is a premium, dark-mode productivity ap
 
 ## 🔗 Live demo
 
-👉 **[Open the demo](https://YOUR-USERNAME.github.io/ascend/)** — _replace `YOUR-USERNAME` with your GitHub handle after deploying (see [Deployment](#-deploy-to-github-pages))._
+👉 **[Open the live demo](https://hamoux.github.io/ascend/)**
 
-> _Tip: drop a screenshot or GIF of the dashboard and the 🇫🇷 ⇄ 🇬🇧 language toggle here._
+> _The link goes live once GitHub Pages is enabled (see [Deployment](#-deploy-to-github-pages)). Tip: drop a screenshot or GIF of the dashboard and the 🇫🇷 ⇄ 🇬🇧 language toggle here._
 
 ---
 
@@ -74,7 +74,7 @@ The repo ships a GitHub Actions workflow (`.github/workflows/deploy.yml`) that *
 1. Push the project to GitHub.
 2. On GitHub: **Settings → Pages → Build and deployment → Source: `GitHub Actions`**.
 3. The workflow runs on its own. When it finishes (the **Actions** tab), the site is live at:
-   `https://YOUR-USERNAME.github.io/ascend/`
+   **https://hamoux.github.io/ascend/**
 
 > Vite is configured with `base: './'`, so the app works under any repo subpath — no changes needed.
 

@@ -17,9 +17,9 @@ Transformez la discipline en récompenses. **Ascend** est une application de pro
 
 ## 🔗 Démo en ligne
 
-👉 **[Voir la démo](https://VOTRE-UTILISATEUR.github.io/ascend/)** — _remplacez `VOTRE-UTILISATEUR` par votre identifiant GitHub une fois le déploiement effectué (voir [Déploiement](#-déploiement-sur-github-pages))._
+👉 **[Ouvrir la démo en ligne](https://hamoux.github.io/ascend/)**
 
-> _Astuce : ajoutez ici une capture d'écran ou un GIF du tableau de bord et du changement de langue 🇫🇷 ⇄ 🇬🇧._
+> _Le lien sera actif une fois GitHub Pages activé (voir [Déploiement](#-déploiement-sur-github-pages)). Astuce : ajoutez ici une capture d'écran ou un GIF du tableau de bord et du changement de langue 🇫🇷 ⇄ 🇬🇧._
 
 ---
 
@@ -74,7 +74,7 @@ Le dépôt inclut un workflow GitHub Actions (`.github/workflows/deploy.yml`) qu
 1. Poussez le projet sur GitHub (voir ci-dessous).
 2. Sur GitHub : **Settings → Pages → Build and deployment → Source : `GitHub Actions`**.
 3. Le workflow se lance tout seul. Une fois terminé (onglet **Actions**), votre site est en ligne à :
-   `https://VOTRE-UTILISATEUR.github.io/ascend/`
+   **https://hamoux.github.io/ascend/**
 
 > La configuration Vite utilise `base: './'`, donc l'application fonctionne quel que soit le sous-chemin du dépôt — aucune modification nécessaire.
 
