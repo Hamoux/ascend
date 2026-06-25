@@ -9,7 +9,7 @@ Transformez la discipline en récompenses. **Ascend** est une application de pro
 ![React](https://img.shields.io/badge/React-18-61dafb?logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-5-646cff?logo=vite&logoColor=white)
-![Licence](https://img.shields.io/badge/Licence-MIT-22c55e)
+![Licence](https://img.shields.io/badge/Licence-PolyForm%20Noncommercial-22c55e)
 
 </div>
 
@@ -132,6 +132,10 @@ src/
 - Chaque entrée de journal capture le nom et l'icône de l'habitude, pour que l'historique et les statistiques survivent aux modifications et suppressions.
 - Les séries utilisent un index de période sensible à la fréquence : les habitudes hebdomadaires/mensuelles comptent correctement, pas seulement les quotidiennes.
 - Les images de récompense sont redimensionnées sur l'appareil (canvas) avant stockage, pour garder le `localStorage` léger.
+
+## 📄 Licence
+
+Sous licence **PolyForm Noncommercial 1.0.0** : libre d'utilisation, de modification et de partage à des fins **non commerciales**. La revente et tout usage commercial ne sont pas autorisés. Voir [LICENSE](LICENSE).
 
 ---
 

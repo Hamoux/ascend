@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Ascend — a gamified habit & reward system. Turn discipline into rewards.",
+  "license": "PolyForm-Noncommercial-1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",

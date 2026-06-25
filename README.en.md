@@ -9,7 +9,7 @@ Turn discipline into rewards. **Ascend** is a premium, dark-mode productivity ap
 ![React](https://img.shields.io/badge/React-18-61dafb?logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-5-646cff?logo=vite&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-22c55e)
+![License](https://img.shields.io/badge/License-PolyForm%20Noncommercial-22c55e)
 
 </div>
 
@@ -112,6 +112,10 @@ src/
 - Each log entry snapshots the habit name & icon, so history and analytics survive habit edits and deletions.
 - Streaks use a frequency-aware period index, so weekly/monthly habits streak correctly — not just daily ones.
 - Reward cover images are downscaled on-device (canvas) before being stored, keeping `localStorage` small.
+
+## 📄 License
+
+Licensed under **PolyForm Noncommercial 1.0.0** — free to use, modify and share for **non-commercial** purposes. Reselling or any commercial use is not permitted. See [LICENSE](LICENSE).
 
 ---
 
