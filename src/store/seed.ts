@@ -25,7 +25,6 @@ export function createSeed(): {
     h('Morning workout', 'fitness', '💪', 'daily', 15, 10, 0.86, 'Sweat first thing — no excuses.'),
     h('Drink 2L water', 'health', '💧', 'daily', 8, 5, 0.9),
     h('Read 20 pages', 'learning', '📚', 'daily', 10, 6, 0.78, 'Fiction or non-fiction, anything counts.'),
-    h('Meditate 10 min', 'mindfulness', '🧘', 'daily', 10, 5, 0.82),
     h('Deep work block', 'productivity', '⚡', 'daily', 18, 10, 0.8, 'Two focused hours, phone in another room.'),
     h('No junk food', 'nutrition', '🥗', 'daily', 12, 12, 0.72),
     h('Sleep before midnight', 'sleep', '😴', 'daily', 10, 8, 0.76),
@@ -69,7 +68,6 @@ export function createSeed(): {
     reward('Cheat meal', 'food', '🍔', 220, 'Whatever you have been craving.'),
     reward('New video game', 'gaming', '🎮', 800, 'That release on your wishlist.'),
     reward('Premium headphones', 'tech', '🎧', 1600, 'Noise-cancelling upgrade.'),
-    reward('Spa & massage', 'wellness', '💆', 650, '90 minutes of pure reset.'),
     reward('Weekend getaway', 'travel', '✈️', 4200, 'Two nights somewhere new.'),
   ];
 
